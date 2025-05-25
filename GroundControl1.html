@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="icon" type="image/x-icon" href="Images/SimplyRocketry_logo_nobg.png">
+    <script src="Function.js"></script>
+    <title>SimplyRocketry Ground Station</title>
+</head>
+<body>
+    <img src="Images/SimplyRocketry_logo_nobg.png" class="logo">
+    <h1 class="title">Simply Rocketry Ground Station</h1>
+    <div class="pyroSection">
+        <h1 class="sectionHeader">PYRO</h1>
+        <div class="rows">
+            <div class="rowLight">
+                <p>Channel 1<span class="otherFont">:</span></p>
+                <p id="Status">NC</p>
+                <button id="fireBtn1" class="FireBtn" onclick="fire1()">FIRE</button>
+            </div>
+            <div class="row">
+                <p>Channel 2<span class="otherFont">:</span></p>
+                <p id="Status">NC</p>
+                <button id="fireBtn2" class="FireBtn">FIRE</button>
+            </div>
+            <div class="rowLight">
+                <p>Channel 3<span class="otherFont">:</span></p>
+                <p id="Status">NC</p>
+                <button id="fireBtn3" class="FireBtn">FIRE</button>
+            </div>
+            <div class="row">
+                <p>Channel 4<span class="otherFont">:</span></p>
+                <p id="Status">NC</p>
+                <button id="fireBtn4" class="FireBtn">FIRE</button>
+            </div>
+        </div>
+        <button id="FireAll">FIRE ALL CHANNELS</button>
+    </div>
+</body>
+</html>
