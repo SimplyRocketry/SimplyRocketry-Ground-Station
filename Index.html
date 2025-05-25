@@ -37,5 +37,61 @@
         </div>
         <button id="FireAll">FIRE ALL CHANNELS</button>
     </div>
+    <div class="ConfigSection">
+        <h1 class="sectionHeader">Flight Config</h1>
+        <div class="rows">
+            <div class="rowLight">
+                <p>Main Channel<span class="otherFont">:</span></p>
+                <select name = "Main_channel" id = "Select">
+                    <option value="-1">Select</option>
+                    <option value="1">Pyro 1</option>
+                    <option value="2">Pyro 2</option>
+                    <option value="3">Pyro 3</option>
+                    <option value="4">Pyro 4</option>
+                </select>
+            </div>
+            <div class="row">
+                <p>Main Deployment<span class="otherFont">:</span></p>
+                <input type="text" id="Alt" name="mainAlt">
+                <select name="Main_Mode" id="SelectAlt">
+                    <option value="-1">Select</option>
+                    <option value="1">Apogee + s</option>
+                    <option value="2">Altitude m</option>
+                </select>
+            </div>
+            <div class="rowLight">
+                <p>Secondary Channel<span class="otherFont">:</span></p>
+                <select name = "Secondary_channel" id = "Select">
+                    <option value="-1">Select</option>
+                    <option value="0">No Drouge</option>
+                    <option value="1">Pyro 1</option>
+                    <option value="2">Pyro 2</option>
+                    <option value="3">Pyro 3</option>
+                    <option value="4">Pyro 4</option>
+                </select>
+            </div>
+            <div class="row">
+                <p>Other Deployment<span class="otherFont">:</span></p>
+                <input type="text" id="Alt" name="mainAlt">
+                <select name="Secondary_mode" id="SelectAlt">
+                    <option value="-1">Select</option>
+                    <option value="1">Apogee + s</option>
+                    <option value="2">Altitude m</option>
+                </select>
+            </div>
+            <div class="rowLight">
+                <p>Backup Channel<span class="otherFont">:</span></p>
+                <select name = "Secondary_channel" id = "Select">
+                    <option value="-1">Select</option>
+                    <option value="0">No Backup</option>
+                    <option value="1">Pyro 1</option>
+                    <option value="2">Pyro 2</option>
+                    <option value="3">Pyro 3</option>
+                    <option value="4">Pyro 4</option>
+                </select>
+            </div>
+        </div>
+        <button id="FireAll">FIRE ALL CHANNELS</button>
+    </div>
 </body>
 </html>

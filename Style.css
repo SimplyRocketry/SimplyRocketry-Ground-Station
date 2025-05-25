@@ -115,3 +115,63 @@ h1{
     top: 25vh;
     width: 100vw;
 }
+
+
+
+.ConfigSection{
+    background-color: #202020;
+    width:20vw;
+    border-radius: 2vh;
+    padding-top: 1vh;
+    position:absolute;
+    top:45vh;
+    left: 3vw;
+}
+#Select{
+    font-family: Jersey;
+    background-color: White;
+    border:none;
+    height:2.25vh;
+    width:5.5vw;
+    float: right;
+    margin-right: 0.15vw;
+    margin-top: 0.35vh;
+    border-radius: 0.8vh;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    color: Black;
+    font-size: 1.81vh;
+}
+#SelectAlt{
+    font-family: Jersey;
+    background-color: White;
+    border:none;
+    height:2.25vh;
+    width:7vw;
+    float: right;
+    margin-right: 0.15vw;
+    margin-top: 0.35vh;
+    border-radius: 0.8vh;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    color: Black;
+    font-size: 1.81vh;
+}
+#Alt{
+    font-family: Jersey;
+    background-color: White;
+    border:none;
+    height:2.25vh;
+    width:2vw;
+    float: right;
+    margin-right: 0.15vw;
+    margin-top: 0.35vh;
+    border-radius: 0.8vh;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    color: Black;
+    font-size: 1.81vh;
+}
