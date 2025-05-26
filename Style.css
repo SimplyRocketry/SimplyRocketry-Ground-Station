@@ -10,10 +10,11 @@ body {
     font-weight: 1;
     margin: 0;
     padding: 0;
+    font-size: clamp(0rem, 3vw, 100rem);
 }
 
 h1 {
-    font-size: 2.5vmin; /* Using vmin for horizontal and vertical scaling */
+    font-size: clamp(0rem, 2.5vw, 2.5rem);
     letter-spacing: 0.4vh;
 }
 
@@ -61,7 +62,7 @@ h1 {
 .row p, .rowLight p {
     display: inline-block;
     margin: 0;
-    font-size: 1.5vmin; /* Using vmin for horizontal and vertical scaling */
+    font-size: clamp(0rem, 1vw, 2.5rem);
     margin-top: 0.1vh;
     margin-left: 0.15vw;
     flex: 1;
@@ -82,13 +83,13 @@ h1 {
     font-family: Jersey;
     background-color: red;
     border: none;
-    height: 2.25vh;
+    height: 1.2vw;
     width: 5.5vw;
     border-radius: 0.8vh;
     cursor: pointer;
     transition: background-color 0.2s ease-in-out;
     color: white;
-    font-size: 1.2vmin; /* Using vmin for horizontal and vertical scaling */
+    font-size: clamp(0rem, 1.05vw, 2.5rem);
     margin-right: 0.15vw;
     margin-top: 0.35vh;
 }
@@ -107,11 +108,11 @@ h1 {
     color: white;
     border: none;
     width: 12vw;
-    font-size: 1.3vmin; /* Using vmin for horizontal and vertical scaling */
+    font-size: clamp(0rem, 1.25vw, 2.5rem);
     margin-left: 4vw;
     margin-top: 1.5vh;
     margin-bottom: 1vh;
-    height: 3vh;
+    height: 1.5vw;
     border-radius: 1.5vh;
 }
 
@@ -141,14 +142,14 @@ h1 {
     font-family: Jersey;
     background-color: white;
     border: none;
-    height: 2.25vh;
+    height: 1.15vw;
     width: 5.5vw;
     border-radius: 0.8vh;
     text-align: center;
     cursor: pointer;
     transition: background-color 0.2s ease-in-out;
     color: black;
-    font-size: 1.2vmin; /* Using vmin for horizontal and vertical scaling */
+    font-size: clamp(0rem, 1vw, 2.5rem);
     margin-right: 0.15vw;
     margin-top: 0.35vh;
 }
@@ -157,14 +158,14 @@ h1 {
     font-family: Jersey;
     background-color: white;
     border: none;
-    height: 2.25vh;
+    height: 1.15vw;
     width: 7vw;
     border-radius: 0.8vh;
     text-align: center;
     cursor: pointer;
     transition: background-color 0.2s ease-in-out;
     color: black;
-    font-size: 1.2vmin; /* Using vmin for horizontal and vertical scaling */
+    font-size: clamp(0rem, 1vw, 2.5rem);
     margin-right: 0.15vw;
     margin-top: 0.35vh;
 }
@@ -173,14 +174,14 @@ h1 {
     font-family: Jersey;
     background-color: white;
     border: none;
-    height: 2.25vh;
+    height: 1.15vw;
     width: 2vw;
     border-radius: 0.8vh;
     text-align: center;
     cursor: pointer;
     transition: background-color 0.2s ease-in-out;
     color: black;
-    font-size: 1.2vmin; /* Using vmin for horizontal and vertical scaling */
+    font-size: clamp(0rem, 1vw, 2.5rem);
     margin-right: 0.15vw;
     margin-top: 0.35vh;
 }
@@ -189,13 +190,13 @@ h1 {
     font-family: Jersey;
     background-color: white;
     border: none;
-    height: 2.25vh;
+    height: 1.15vw;
     width: 5.5vw;
     border-radius: 0.8vh;
     cursor: pointer;
     transition: background-color 0.2s ease-in-out;
     color: black;
-    font-size: 1.2vmin; /* Using vmin for horizontal and vertical scaling */
+    font-size: clamp(0rem, 1vw, 2.5rem);
     margin-right: 0.15vw;
     margin-top: 0.05vh;
     text-align: center;
@@ -214,14 +215,14 @@ h1 {
     font-family: Jersey;
     background-color: white;
     border: none;
-    height: 2.25vh;
+    height: 1.15vw;
     width: 6vw;
     border-radius: 0.8vh;
     text-align: center;
     cursor: pointer;
     transition: background-color 0.2s ease-in-out;
     color: black;
-    font-size: 1.2vmin; /* Using vmin for horizontal and vertical scaling */
+    font-size: clamp(0rem, 1vw, 2.5rem);
     margin-right: 0.15vw;
     margin-top: 0.35vh;
 }
@@ -232,11 +233,11 @@ h1 {
     color: black;
     border: none;
     width: 12vw;
-    font-size: 1.3vmin; /* Using vmin for horizontal and vertical scaling */
+    font-size: clamp(0rem, 1.25vw, 2.5rem);
     margin-left: 4vw;
     margin-top: 1.5vh;
     margin-bottom: 1vh;
-    height: 3vh;
+    height: 1.5vw;
     border-radius: 1.5vh;
     transition: background-color 0.2s ease-in-out;
 }
@@ -253,14 +254,14 @@ h1 {
     font-family: monospace;
     background-color: white;
     border: none;
-    height: 2.25vh;
+    height: 1.25vw;
     width: 2vw;
     border-radius: 0.8vh;
     text-align: center;
     cursor: pointer;
     transition: background-color 0.2s ease-in-out;
     color: black;
-    font-size: 1.6vmin; /* Using vmin for horizontal and vertical scaling */
+    font-size: clamp(0rem, 1.5vw, 2.5rem);
     font-weight: 900;
     margin-right: 0.25vw;
     margin-left: 0.25vw;
@@ -270,6 +271,7 @@ h1 {
 #pm span {
     position: relative;
     top: -0.65vh;
+    font-size: 100%;
 }
 
 #pm:hover {
@@ -282,59 +284,11 @@ h1 {
 
 #Servo1_pos, #Servo2_pos, #Servo3_pos, #Servo4_pos {
     margin: 0 0.5rem;
+    float: right;
+    position: relative;
+    right: -5vw;
 }
-
-@media (max-width: 768px) {
-    .pyroSection, .ConfigSection, .ServoSection {
-        width: 90%;
-        left: 5%;
-        top: auto;
-        margin: 1vh 0;
-    }
-    .pyroSection{
-        margin-top:25vh;
-    }
-
-    .logo {
-        width: 40%;
-        left: 30%;
-        top: 2vh;
-    }
-
-    .title {
-        top: 22vh;
-        font-size: 2vmin; /* Using vmin for horizontal and vertical scaling */
-    }
-
-    .FireBtn, #Select, #SelectAlt, #SelectMode, #Alt, .Btn, #pm {
-        font-size: 1vmin; /* Using vmin for horizontal and vertical scaling */
-    }
-
-    #FireAll, #SendBtn {
-        font-size: 1.2vmin; /* Using vmin for horizontal and vertical scaling */
-    }
-
-    #Status {
-        left: auto;
-        margin: 0 0.5rem;
-    }
-}
-
-@media (min-width: 2560px) {
-    
-h1 {
-    font-size: 2.5vmin; /* Using vmin for horizontal and vertical scaling */
-    letter-spacing: 0.4vh;
-}
-    .pyroSection, .ConfigSection, .ServoSection {
-        width: 15vw;
-    }
-
-    .logo {
-        width: 10vw;
-    }
-
-    h1 {
-        font-size: 2.2vmin; /* Using vmin for horizontal and vertical scaling */
-    }
+.p{
+    position: relative;
+    right:-5vw;
 }
