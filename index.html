@@ -97,8 +97,57 @@
                     <option value="4">Pyro 4</option>
                 </select>
             </div>
+            <div class="row">
+                <p>Set Launch Status<span class="otherFont">:</span></p>
+                <button id="SetBtn" class="Btn">Set</button>
+            </div>
+            <div class="rowLight">
+                <p>Abort angle: <span class="otherFont">:</span></p>
+                <input type="text" class = "Btn" name="Abort">
+            </div>
+            <div class="row">
+                <p>Control Mode: <span class="otherFont">:</span></p>
+                <select name = "Main_channel" id = "SelectMode">
+                    <option value="-1">Select</option>
+                    <option value="1">Passive</option>
+                    <option value="2">Active Fins</option>
+                    <option value="3">Canards</option>
+                    <option value="4">Return</option>
+                    <option value="5">TVC</option>
+                </select>
+            </div>
         </div>
-        <button id="FireAll">FIRE ALL CHANNELS</button>
+        <button id="SendBtn">Send</button>
+    </div>
+    <div class="ServoSection">
+        <h1 class="sectionHeader">alignment</h1>
+        <div class="rows">
+            <div class="rowLight">
+                <p>Servo 1<span class="otherFont">:</span></p>
+                <button id = "pm"><span>+</span></button>
+                <p id = "Servo1_pos">90.0</p>
+                <button id = "pm"><span>-</span></button>
+            </div>
+            <div class="row">
+                <p>Servo 2<span class="otherFont">:</span></p>
+                <button id = "pm"><span>+</span></button>
+                <p id = "Servo2_pos">90.0</p>
+                <button id = "pm"><span>-</span></button>
+            </div>
+            <div class="rowLight">
+                <p>Servo 3<span class="otherFont">:</span></p>
+                <button id = "pm"><span>+</span></button>
+                <p id = "Servo3_pos">90.0</p>
+                <button id = "pm"><span>-</span></button>
+            </div>
+            <div class="row">
+                <p>Servo 4<span class="otherFont">:</span></p>
+                <button id = "pm"><span>+</span></button>
+                <p id = "Servo4_pos">90.0</p>
+                <button id = "pm"><span>-</span></button>
+            </div>
+        </div>
+        <button id="SendBtn">Send</button>
     </div>
 </body>
 </html>
