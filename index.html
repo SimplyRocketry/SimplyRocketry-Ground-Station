@@ -13,6 +13,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
     <meta name="apple-mobile-web-app-title" content="My App Name">
     <link rel="apple-touch-icon" href="Images/Logo_192x192.png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
 </head>
 <body>
     <img src="Images/SimplyRocketry_logo_nobg.png" class="logo">
@@ -147,6 +148,56 @@
             </div>
         </div>
         <button id="SendBtn">Send</button>
+    </div>
+    <div class="Right">
+        <div class="StatusSection">
+            <h1 class="sectionHeader">Flight Status</h1>
+            <div class="rows">
+                <div class="rowLight">
+                    <p>GPS Lat<span class="otherFont">:</span></p>
+                    <p id = "Lat" class="otherFont">-000.0000000</p>
+                </div>
+                <div class="row">
+                    <p>GPS Lon<span class="otherFont">:</span></p>
+                    <p id = "Lon" class="otherFont">-000.0000000</p>
+                </div>
+                <div class="rowLight">
+                    <p>GPS Sats<span class="otherFont">:</span></p>
+                    <p id = "Sats" class="otherFont">5</p>
+                </div>
+                <div class="row">
+                    <p>Distance From Pad <span class="otherFont">(m):</span></p>
+                    <p id = "distance" class="otherFont">1000</p>
+                </div>
+                <div class="rowLight">
+                    <p>Direction From Pad<span class="otherFont">:</span></p>
+                    <p id = "Bearing" class="otherFont">5</p>
+                </div>
+                <div class="row">
+                    <p>()</p>
+                </div>
+                <div class="rowLight">
+                    <p>Altitude <span class = "otherFont">(m)</span><span class="otherFont">:</span></p>
+                    <p id = "Altitude" class="otherFont">1000</p>
+                </div>
+                <div class="row">
+                    <p>Velocity <span class = "otherFont">(m/s)</span><span class="otherFont">:</span></p>
+                    <p id = "Velocity" class="otherFont">1000</p>
+                </div>
+                <div class="rowLight">
+                    <p>FlightMode<span class="otherFont">:</span></p>
+                    <p id = "Mode">Powered Descent</p>
+                </div>
+                <div class="row">
+                    <p>Battery Voltage <span class = "otherFont">V</span><span class="otherFont">:</span></p>
+                    <p id = "Voltage" class="otherFont">12.0</p>
+                </div>
+            </div>
+        </div>
+        <div class="VelocityChart">
+            <h1 class="sectionHeader">Velocity</h1>
+            <canvas id="myChart" width="50vw" height="50vw"></canvas>
+        </div>
     </div>
     <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d4081.641479416181!2d175.25771171239998!3d-37.55107771895588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzfCsDMzJzAzLjkiUyAxNzXCsDE1JzM3LjEiRQ!5e1!3m2!1sen!2snz!4v1748254451007!5m2!1sen!2snz" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id = "map"></iframe>
 </body>

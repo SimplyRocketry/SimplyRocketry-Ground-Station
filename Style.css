@@ -15,33 +15,33 @@ body {
 
 h1 {
     font-size: clamp(0rem, 2.5vw, 2.5rem);
-    letter-spacing: 0.4vh;
+    letter-spacing: 0.2vw;
 }
 
 .pyroSection {
     background-color: #202020;
     width: 20vw;
-    border-radius: 2vh;
-    padding-top: 1vh;
+    border-radius: 1.5vw;
+    padding-top: 0.75vw;
     margin: 0px;
-    margin-top: 4vh;
+    margin-top: 2vw;
     margin-left: 3vw;
 }
 
 .ConfigSection, .ServoSection {
     background-color: #202020;
     width: 20vw;
-    border-radius: 2vh;
-    padding-top: 1vh;
+    border-radius: 1.5vw;
+    padding-top: 0.75vw;
     margin: 0px;
-    margin-top: 3vh;
+    margin-top: 1.5vw;
     margin-left: 3vw;
 }
 
 .sectionHeader {
     margin: 0;
     text-align: center;
-    margin-bottom: 1vh;
+    margin-bottom: 0.5vw;
 }
 
 .rows {
@@ -63,7 +63,7 @@ h1 {
     display: inline-block;
     margin: 0;
     font-size: clamp(0rem, 1vw, 2.5rem);
-    margin-top: 0.1vh;
+    margin-top: 0.05vw;
     margin-left: 0.15vw;
     flex: 1;
 }
@@ -85,13 +85,13 @@ h1 {
     border: none;
     height: 1.2vw;
     width: 5.5vw;
-    border-radius: 0.8vh;
+    border-radius: 0.3vw;
     cursor: pointer;
     transition: background-color 0.2s ease-in-out;
     color: white;
     font-size: clamp(0rem, 1.05vw, 2.5rem);
     margin-right: 0.15vw;
-    margin-top: 0.35vh;
+    margin-top: 0.15vw;
 }
 
 .FireBtn:hover {
@@ -110,7 +110,7 @@ h1 {
     width: 12vw;
     font-size: clamp(0rem, 1.25vw, 2.5rem);
     margin-left: 4vw;
-    margin-top: 1.5vh;
+    margin-top: 0.6vw;
     margin-bottom: 1vh;
     height: 1.5vw;
     border-radius: 1.5vh;
@@ -300,4 +300,40 @@ h1 {
     height: 30vw;
     border: none;
     border-radius: 1vw;
+}
+
+
+.Right {
+    position: absolute;
+    right: 3vw;
+    top: 2vw;
+}
+
+.StatusSection {
+    background-color: #202020;
+    width: 20vw;
+    border-radius: 2vh;
+    padding-top: 1vh;
+    margin: 0px;
+    padding-bottom: 1vw;
+}
+
+#Lat, #Lon, #Sats, #distance, #Bearing, #Altitude, #Velocity, #Mode, #Voltage{
+    float: right;
+    text-align: right;
+    margin-right: 0.25vw;
+}
+
+.VelocityChart{
+    background-color: #202020;
+    width: 20vw;
+    border-radius: 2vh;
+    padding-top: 1vh;
+    margin: 0px;
+    margin-top: 2vw;
+    padding-bottom: 1vw;
+}
+#myChart{
+    width: 18vw;
+    height: 1000px;
 }
