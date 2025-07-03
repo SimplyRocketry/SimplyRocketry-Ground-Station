@@ -29,20 +29,25 @@ document.addEventListener("DOMContentLoaded", function () {
                 pointBackgroundColor: "rgb(0, 0, 255)",
                 borderColor: "rgb(0, 0, 255)",
                 backgroundColor: "rgba(0, 0, 255, 0.2)",
-                fill: true,
+                fill: false,
                 tension: 0.4 // Smooth line
             }]
         },
         options: {
-            responsive: true,
+            responsive: true,/*
             legend: {
                 display: true,
-                position: "top"
+                position: "top",
+                labels: {
+                    fontSize: Math.min(0.7 * window.innerWidth / 100),
+                    fontFamily: "Jersey, sans-serif"
+                }
             },
             title: {
                 display: true,
-                text: "Rocket Velocity vs. Time"
-            },
+                text: "Rocket Velocity vs. Time",
+                fontSize: Math.min(1 * window.innerWidth / 100),
+            },*/
             scales: {
                 xAxes: [{
                     type: "linear",
@@ -52,7 +57,8 @@ document.addEventListener("DOMContentLoaded", function () {
                         max: 160,
                         callback: function (value) {
                             return value + " s"; // Label as seconds
-                        }
+                        },
+                        fontSize: Math.min(0.7 * window.innerWidth / 100),
                     },
                     scaleLabel: {
                         display: true,
@@ -65,7 +71,8 @@ document.addEventListener("DOMContentLoaded", function () {
                         max: 16,
                         callback: function (value) {
                             return value + " m/s"; // Label as velocity
-                        }
+                        },
+                        fontSize: Math.min(0.7 * window.innerWidth / 100),
                     },
                     scaleLabel: {
                         display: true,
