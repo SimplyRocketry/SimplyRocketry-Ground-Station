@@ -13,7 +13,6 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
     <meta name="apple-mobile-web-app-title" content="My App Name">
     <link rel="apple-touch-icon" href="Images/Logo_192x192.png">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
 </head>
 <body>
     <img src="Images/SimplyRocketry_logo_nobg.png" class="logo">
@@ -103,7 +102,7 @@
             </div>
             <div class="rowLight">
                 <p>Abort angle: <span class="otherFont">:</span></p>
-                <input type="text" class = "Btn" name="Abort">
+                <input type="number" class = "Btn" name="Abort">
             </div>
             <div class="row">
                 <p>Control Mode: <span class="otherFont">:</span></p>
@@ -192,12 +191,64 @@
                     <p>Battery Voltage <span class = "otherFont">V</span><span class="otherFont">:</span></p>
                     <p id = "Voltage" class="otherFont">12.0</p>
                 </div>
+                <div class="rowLight">
+                    <p>Time since last packet <span class="otherFont">(s):</span></p>
+                    <p id = "Packet" class="otherFont">000.00</p>
+                </div>
+                <div class="row">
+                    <p>/</p>
+                </div>
             </div>
         </div>
-        <div class="VelocityChart">
-            <h1 class="sectionHeader">Velocity</h1>
-            <canvas id="myChart" width="100vw" height="90vw"></canvas>
+        <div class="GroundConfig">
+            <h1 class="sectionHeader">Ground Config</h1>
+            <div class="rows">
+                <div class="rowLight">
+                    <p>Connection mode<span class="otherFont">:</span></p>
+                    <select name = "Interface" id = "Select">
+                        <option value="-1">Select</option>
+                        <option value="1">Bluetooth</option>
+                        <option value="2">Serial</option>
+                    </select>
+                </div>
+                <div class="row">
+                    <button id = "SendBtn">Connect</button>
+                </div>
+                <div class="rowLight">
+                    <p>saving<span class="otherFont">:</span></p>
+                    <button id="save" class="FireBtn">False</button>
+                </div>
+                <div class="row">
+                    <p>Radio Module<span class="otherFont">:</span></p>
+                    <select name="RadioModule" id="Select">
+                        <option value="-1">Select</option>
+                        <option value="1">HC12</option>
+                        <option value="2">NRF24</option>
+                        <option value="3">LORA</option>
+                    </select>
+                </div>
+                <div class="rowLight">
+                    <p>Channel<span class="otherFont">:</span></p>
+                    <input type="number" class="Btn" name="Channel">
+                </div>
+                <div class="row">
+                    <p>Radio Baud rate<span class="otherFont">:</span></p>
+                    <select name = "Secondary_channel" id = "Select">
+                        <option value="-1">Select</option>
+                        <option value="0">1200</option>
+                        <option value="1">2400</option>
+                        <option value="2">4800</option>
+                        <option value="3">9600</option>
+                    </select>
+                </div>
+                <div class="rowLight">
+                    <p>Altitude Callouts<span class="otherFont">:</span></p>
+                    <button id="call" class="FireBtn">Off</button>
+                </div>
+            </div>
+            <button id="SendBtn">Send</button>
         </div>
+        <button id = "Abort"><h1>Abort</h1></button>
     </div>
     <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d4081.641479416181!2d175.25771171239998!3d-37.55107771895588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzfCsDMzJzAzLjkiUyAxNzXCsDE1JzM3LjEiRQ!5e1!3m2!1sen!2snz!4v1748254451007!5m2!1sen!2snz" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id = "map"></iframe>
 </body>

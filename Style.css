@@ -18,7 +18,7 @@ h1 {
     letter-spacing: 0.2vw;
 }
 
-.pyroSection {
+.pyroSection, .StatusSection {
     background-color: #202020;
     width: 20vw;
     border-radius: 1.5vw;
@@ -28,7 +28,7 @@ h1 {
     margin-left: 3vw;
 }
 
-.ConfigSection, .ServoSection {
+.ConfigSection, .ServoSection, .GroundConfig{
     background-color: #202020;
     width: 20vw;
     border-radius: 1.5vw;
@@ -53,6 +53,7 @@ h1 {
     display: flex;
     align-items: center;
     padding: 0.1rem 0.15vw;
+    white-space: nowrap;
 }
 
 .rowLight {
@@ -83,15 +84,17 @@ h1 {
     font-family: Jersey;
     background-color: red;
     border: none;
-    height: 1.2vw;
+    height: 1.15vw;
     width: 5.5vw;
-    border-radius: 0.3vw;
+    border-radius: 0.5vw;
     cursor: pointer;
     transition: background-color 0.2s ease-in-out;
     color: white;
-    font-size: clamp(0rem, 1.05vw, 2.5rem);
+    font-size: clamp(0rem, 1vw, 2.5rem);
     margin-right: 0.15vw;
-    margin-top: 0.15vw;
+    margin-top: 0vw;
+    text-align: center;
+    padding: 0px;
 }
 
 .FireBtn:hover {
@@ -111,9 +114,9 @@ h1 {
     font-size: clamp(0rem, 1.25vw, 2.5rem);
     margin-left: 4vw;
     margin-top: 0.6vw;
-    margin-bottom: 1vh;
+    margin-bottom: 0.75vw;
     height: 1.5vw;
-    border-radius: 1.5vh;
+    border-radius: 1vw;
 }
 
 #FireAll:hover {
@@ -144,14 +147,14 @@ h1 {
     border: none;
     height: 1.15vw;
     width: 5.5vw;
-    border-radius: 0.8vh;
+    border-radius: 0.5vw;
     text-align: center;
     cursor: pointer;
     transition: background-color 0.2s ease-in-out;
     color: black;
     font-size: clamp(0rem, 1vw, 2.5rem);
     margin-right: 0.15vw;
-    margin-top: 0.35vh;
+    margin-top: 0vw;
 }
 
 #SelectAlt {
@@ -160,14 +163,14 @@ h1 {
     border: none;
     height: 1.15vw;
     width: 7vw;
-    border-radius: 0.8vh;
+    border-radius: 0.5vw;
     text-align: center;
     cursor: pointer;
     transition: background-color 0.2s ease-in-out;
     color: black;
     font-size: clamp(0rem, 1vw, 2.5rem);
     margin-right: 0.15vw;
-    margin-top: 0.35vh;
+    margin-top: 0vw;
 }
 
 #Alt {
@@ -176,14 +179,14 @@ h1 {
     border: none;
     height: 1.15vw;
     width: 2vw;
-    border-radius: 0.8vh;
+    border-radius: 0.5vw;
     text-align: center;
     cursor: pointer;
     transition: background-color 0.2s ease-in-out;
     color: black;
     font-size: clamp(0rem, 1vw, 2.5rem);
     margin-right: 0.15vw;
-    margin-top: 0.35vh;
+    margin-top: 0vw;
 }
 
 .Btn {
@@ -192,13 +195,13 @@ h1 {
     border: none;
     height: 1.15vw;
     width: 5.5vw;
-    border-radius: 0.8vh;
+    border-radius: 0.5vw;
     cursor: pointer;
     transition: background-color 0.2s ease-in-out;
     color: black;
     font-size: clamp(0rem, 1vw, 2.5rem);
     margin-right: 0.15vw;
-    margin-top: 0.05vh;
+    margin-top: 0vw;
     text-align: center;
     padding: 0px;
 }
@@ -217,14 +220,14 @@ h1 {
     border: none;
     height: 1.15vw;
     width: 6vw;
-    border-radius: 0.8vh;
+    border-radius: 0.5vw;
     text-align: center;
     cursor: pointer;
     transition: background-color 0.2s ease-in-out;
     color: black;
     font-size: clamp(0rem, 1vw, 2.5rem);
     margin-right: 0.15vw;
-    margin-top: 0.35vh;
+    margin-top: 0vw;
 }
 
 #SendBtn {
@@ -235,10 +238,10 @@ h1 {
     width: 12vw;
     font-size: clamp(0rem, 1.25vw, 2.5rem);
     margin-left: 4vw;
-    margin-top: 1.5vh;
-    margin-bottom: 1vh;
+    margin-top: 0.5vw;
+    margin-bottom: 1vw;
     height: 1.5vw;
-    border-radius: 1.5vh;
+    border-radius: 0.7vw;
     transition: background-color 0.2s ease-in-out;
 }
 
@@ -256,7 +259,7 @@ h1 {
     border: none;
     height: 1.25vw;
     width: 2vw;
-    border-radius: 0.8vh;
+    border-radius: 0.5vw;
     text-align: center;
     cursor: pointer;
     transition: background-color 0.2s ease-in-out;
@@ -265,12 +268,12 @@ h1 {
     font-weight: 900;
     margin-right: 0.25vw;
     margin-left: 0.25vw;
-    margin-top: 0.35vh;
+    margin-top: 0vw;
 }
 
 #pm span {
     position: relative;
-    top: -0.65vh;
+    top: -0.35vw;
     font-size: 100%;
 }
 
@@ -306,35 +309,39 @@ h1 {
 .Right {
     position: absolute;
     right: 3vw;
-    top: 2vw;
+    top: 0vw;
 }
 
-.StatusSection {
-    background-color: #202020;
-    width: 20vw;
-    border-radius: 2vh;
-    padding-top: 1vh;
-    margin: 0px;
-    padding-bottom: 1vw;
-}
-
-#Lat, #Lon, #Sats, #distance, #Bearing, #Altitude, #Velocity, #Mode, #Voltage{
+#Lat, #Lon, #Sats, #distance, #Bearing, #Altitude, #Velocity, #Mode, #Voltage, #Packet{
     float: right;
     text-align: right;
     margin-right: 0.25vw;
 }
 
-.VelocityChart{
-    background-color: #202020;
+#Abort{
     width: 20vw;
-    border-radius: 2vh;
-    padding-top: 1vh;
+    border-radius: 1.5vw;
+    padding-top: 0.75vw;
+    padding-bottom: 0.75vw;
     margin: 0px;
-    margin-top: 2vw;
-    padding-bottom: 1vw;
+    margin-top: 1.5vw;
+    margin-left: 3vw;
+    background-color: red;
+    border: none;
 }
-#myChart{
-    width: 18vw;
-    height: 1000px;
-    font-size: 0.5vw;
+
+#Abort:hover {
+    background-color: rgb(204, 0, 0);
+}
+
+#Abort:active {
+    background-color: rgb(160, 0, 0);
+}
+
+#Abort h1{
+    margin: 0;
+    color: white;
+    font-size: 3.5vw;
+    font-family: Jersey;
+    letter-spacing: 0.3vw;
 }
