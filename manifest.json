@@ -7,12 +7,12 @@
     "theme_color": "#ffffff",
     "icons": [
       {
-        "src": "Images/Simply Rocketry Logo192.jpg",
+        "src": "Images/Simply_Rocketry_Logo192.jpg",
         "sizes": "192x192",
         "type": "image/jpg"
       },
       {
-        "src": "Images/Simply Rocketry Logo512.jpg",
+        "src": "Images/Simply_Rocketry_Logo512.jpg",
         "sizes": "512x512",
         "type": "image/jpg"
       }
